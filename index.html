@@ -12,7 +12,8 @@ p {
 </head>
 <body>
 
-<p id="demo"></p>
+<p id="countDown"></p>
+<p id="moveInCountDown"></p>
 
 <script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
 <div class="pa-carousel-widget" style="width:100%; height:480px; display:none;"
@@ -30,7 +31,8 @@ p {
 
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("June 7, 2019 17:00:00").getTime();
+var countDownDate = new Date("June 14, 2019 16:30:00").getTime();
+var moveInCountDownDate = new Date("September 30, 2019 15:35:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -40,6 +42,7 @@ var x = setInterval(function() {
     
   // Find the distance between now and the count down date
   var distance = countDownDate - now;
+  var distance2 = moveInCountDownDate - now;
     
   // Time calculations for days, hours, minutes and seconds
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -47,14 +50,30 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000)
     
-  // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  // Output the result in an element with id="countDown"
+  document.getElementById("countDown").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
-    
+
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+    document.getElementById("countDown").innerHTML = "&#128536;";
+  }
+
+   // Time calculations for days, hours, minutes and seconds
+  days = Math.floor(distance2 / (1000 * 60 * 60 * 24));
+  hours = Math.floor((distance2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  minutes = Math.floor((distance2 % (1000 * 60 * 60)) / (1000 * 60));
+  seconds = Math.floor((distance2 % (1000 * 60)) / 1000)
+    
+  // Output the result in an element with id="countDown"
+  document.getElementById("moveInCountDown").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance2 < 0) {
+    clearInterval(x);
+    document.getElementById("moveInCountDown").innerHTML = "Welcome home!";
   }
 }, 1000);
 </script>
