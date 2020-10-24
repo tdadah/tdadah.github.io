@@ -1,83 +1,146 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-p {
-  text-align: center;
-  font-size: 60px;
-  margin-top: 0px;
-}
-</style>
-</head>
-<body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>Tara Dadah · Software Engineer</title>
 
-<p id="countDown"></p>
-<p id="moveInCountDown"></p>
+    <script src="https://kit.fontawesome.com/efea37acd8.js" crossorigin="anonymous"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
-<div class="pa-carousel-widget" style="width:100%; height:480px; display:none;"
-  data-link="https://photos.app.goo.gl/4EPyUBC4qw7xddG77"
-  data-title="Sitara and Tara"
-  data-description="5 new photos added to shared album">
-  <img data-src="https://lh3.googleusercontent.com/w8vUGF-ASdE3wxnxYwFWr-sMwj19tzJ0ryHgQq5PSW9UNEzFX-5HheHylMUEhmZd9p-EVrv4OcHwWNp4ZEm6FFGihbJrNx_RfUfGf4lzMgb7IWkRQVy0pSxyA9Q-WAZM1CLYpZK4jR0=w1920-h1080" src="" alt="" />
-  <img data-src="https://lh3.googleusercontent.com/JLmOeBpTczA0RbZVhodqTMq85KzRQQlvu1mjX7i-Jld_MWRX3fReb1FF6tNVeOdUEkVM6kqsiiK9b00WhJXer0zKLPsByTpcKJ0AEFUrvIdGWja7_piqb-jwXwVEu4dZn1AEIF5f3ag=w1920-h1080" src="" alt="" />
-  <img data-src="https://lh3.googleusercontent.com/BXD1ttmaisg_vAvsjIWJyGJ7l__vaYiC6FCwbxxpoppND3kkqvVie6QRgBmDwCuss-lbz_EPyZ2OYpMSS6EdKyDYGI4_mbJL0AyIoCYXFuQkBs9dfM5bV01O256njRWAdKgwbHFNL4c=w1920-h1080" src="" alt="" />
-  <img data-src="https://lh3.googleusercontent.com/oV0n2qSS3Krj6LSYkClzS8N1gBX-0WadhGJG7X3UMwcFYKkb7x1kqkGwTJgGbYXyiQzjvS7Z6kblqugPQimxKpw1nO9jbVrERye-vOhKn2db8Bv9pXJgylVtoPffCJg0DC65dRDybKrSoKHG6xZI4Ry5dJ16oxoXub_4MzAU_5awKExSkRKPRRUJa09Fjss0ZveYLian1tr3QD-8n4S7FC2oErzg-Saq1CHkQtEUEat__X4h_QvuRuC9sN7-0qRRpc8waykGbH5OXDQp41F-fmU_oi9_LezqeX61Z7p_G4ITYHKkSHk0gIenatVxW4fJC3aXAttSTntwki-qIfT1jwRKzl-vSUU2DZ-kD1MC0jUDdshn6cBD3ztpCSZ_uF6SLrosgVJJ9G069CBV64OCgNQ2XQmseJu39d4RhrzoCeJrXgRJSo7WBYv0ZtKqGTIvKnJp-yAN4KaD0c26cDbrTPaQXb4m3qbzOkmkXFCGB0LEvb8YxQdi5RMw-KUO7LJARlqfasvyj_in-i42T9Y8W4PBRColNKvdGNSUdUgs92by85PyH_7wN42DFd2JCI5pYy-CZd2zIlHq9vK3kAUDuZgCmKM4hgIjbTWp9xTzGIgTwe_JKchsnyUxtWQyB7ECwIKJQ2D7w1Ptf9ExuABh5wAMjQAb5wFnVlMm9dWDtUO712-y6zkG_gJOWbYLURwoBva2SMa-eDUtX_FKnDtI2jcboA=w733-h977-no" src="" alt="" />
-  <img data-src="https://lh3.googleusercontent.com/8S6k3KfHpIXBmFa0AEuL-HRKtGcO0BwwVKihQ5SPNlFZnTpB0zg8IJ9KJg_6vkF0J9XTtDwK4W4MeFdgou6rWyHLQS6wjluO7CAvYHG6NG9fRX_WD_ypw5a3pQIKnfF7WYzAWd6Fbi_rY3ne5dKEaOHfMsXSMyZ8EzgEuXsCRna_LAOpGKmkxfzvVHuyX00WY6bvMmD6kqsCxKgs1SDCcu4VZyOqB3BU0SB9HLbN7qBA2XZMLxpvQXRofFWlk9LixettSNLMGceRSG2WMwaWaevT6U6BL8YTnpUUbWJeyRJXc7BdBQp4N7DShJrBwWdVAGi67ZaR8z3_pUYOau7UOWvrXh3FfjF20nOCPMjMeucVwWuEvaXd14jjaXDs2BjodPfr2VSEJ7Q6PPg4IzL3UYtQDcEMOHd6-D04QQkhZVrfSOrsxtBnh-KRkfyTkcYOvcOQs-Pvpkv4ORpE5fwcu1-0W36Ecmoks63aqqakofMIUwne_TgdtPlV-jafiiZ2SDJpJJKAIIV-PMcgFGQD9FDpbylv_-PmwmwhWB278qJbvkkUs7IjXj89c2fxqGbP-HrSn-JbnF1l3cRCY9Azs6VlhVXPj1qQgnwrRFoxi5PDi23OCnyTLBmusbveaXMGHK-YIFOTnIFtU9mYq_cb1FOwJ5nEu_TBMwrYedvojenHKj_xWCO2Z9Pr15VxRU9rr_UvYwQ6VHiuv2gqGCxGLIFp3Q=w733-h977-no" src="" alt="" />
-  <img data-src="https://lh3.googleusercontent.com/4MrepJ7T0IophMjzpydj1G66j16mgrDNIegh85cAZ3VbNp8JTqHQdYH7eu-G07J57bKMOlxwNeLOvCyxmP6LXO4f_HaHFQM7ibj-0nRVNUMPdurgpazuoky4C7FUfY88uJfuh6NEfL0grucelPAettzGq-GhcKPT6RV7ADRTSAEkTiFoNDeiawS1QcuqjrMifVa5d-9RtLynpyTBJs82Gf_dFvH35C0zMlXvKIw4ECQVxVFejDOCyZBLgAm0XBITqie28z6mogdr7MgRid7cAo2T9e-C1GnklAertrIVc5L9yLbpUaMBfQ4LaucwzToYeIT2uvuRcjFGjiMduyRpXDLfxQNloz7ptWT1UcAtTX1ljFQ9R9PkH3aoshZn_iGzHYzye13Qy22I6tDPMF_kGwZRL9HVSICXYuPoZI9sSvsl2IB5sQHq7sp7TOyc-hPh6wBjteklS2ldHad0izikTxbUu_2J2n0xANShatXZN5ytmNFHMjyBHeGNe5veMFDMvTEXlA1QsKlazj66eHTHwiIBiQMptRJ0-6mlRczUFhRR6CsibW80iRKxKM6pLV6CklFXfSrL9Mw1pyzCxDIyC7Liztz3FU8W0t-11QFIt-_uVMbwzdz8Kp9NFXnRYvaL4_WRXXvC0Dg6MepSSnesUtEPePmzBIoC0qgIOBbfCUB4JYKTDtT7K50F_0HrI1zGM6mHfxOqHA-WLym4oh0cuUcK2g=w733-h977-no" src="" alt="" />
-  <img data-src="https://lh3.googleusercontent.com/ES1jvaYYC_olKdtKyOnbTk3cVQ7qX8-3WY40wvzNAONfGbxxSyT634gPS7OSkNEytjZz6ll7qTIcZqvMx8MV6rA3cvZF-3kr2rKcRPuc-ytxoCZkrpXhb7vpOweT69yJxtYztnI_xCIx46nFPNb9G4VZtjDanksFxqzJpmhG6Tz2eELoOeJd4SGylankzPjr9cpGFsnnbwTQmgVIWA0XR4RjUWZ65jK0WN4YTrFV5HQmgCddfxP2HYm_C7Ax2BJU7JrqWvYlhzpMrmsBbmFyH8CQc8WXjSr_Jbowt_Xgx-FCJ0ytRUORQ8IgwO6TUovzT6W7bvzcFTAURdW2b_Wq-VzWQDwQnrHIZw592FXRfeQb94V0I9iq91VqEgT13ZwbSyRe0PArvAkKVs_eJ_sJ3yiVogfCqomL2OraL4UNK2luGARgPc-rD08Uu-ntTw45QiR7yqbJhayAkeXygHBsY8t-xYEqkC-AbtlbGTNfWfCPQfuG1xtDmv6ZoTem1T-micC_0ffaTIpAog7UEimWs_Nv65LnBYpRKyBE9UhoDHwkXDjTjblt63Yl3pbPI1POHHnd9gBFJj5sU0JWrdLsMLUue0ffR6HKbxtIE2VMMBdMFpcwpWehSXrMMEIcsclOnLE2SVgsZqbSqnDjWbl-3s7_GLpWbz3k=w1303-h977-no" src="" alt="" />
-  <img data-src="https://lh3.googleusercontent.com/D4jtqKy8rrlMndpx-mv6iIQUpZm9ZzRv10YFR9d9_lZ1dhgItNFCog0sirPaoANiiItJZ4bvnbHeAHkQtaIHRJ7QEDf52u2GCreGY4No9OlKOVVk4TWFWXmkMKK3fmb0yhaywz8iUdtDyBnG1g0gsh4yVp6ydDjcZIuArE27cdd0I5WcIzGa5cn6ONFFO_jRDifg0EGX6OwhZZvYYP9QRqFRf1LykPk5yxtaYGTNNbl342R8_Jpclybhtyn1Gm7aiw631CS8Rc7h7nBgdfQNOyOFSQz7qNDY24unpMdIaHru8VtCfNSzzq7Zi3hLvqjCY-Iv6cH5zAcoHF9NobGL0J3VZIHW3UY8uPPlcHCIPoiiZf2XlqqXvtkx2rFQ6s_T8BiI4fyPxLN-glj7c1cr-MRbebfbfR53Iu1p3ucxVl7xhIqX1mdX_8YcAK-WhZeQ7Xl1mxePztBAcOh9-z-9Rbb4iPPDXVe2Hkt6ysg8Yc-vRwl6ObrwffNRaZDbGV8h1PVnM7chW_FKoBht0chVnqnrPkMwgIn1rpJ78lsqPmCTtd6gv2WoNxpM_TnAkyytnSvy6lnc0VeRhRKQ9ncD3dbi7AAYdATLafjtISKhazFo0CGbayXInHEacz13mR5-XlW7lCdXynUd3aynFB2BlGbG4f1IQ9FcfIx7EqDRPGwbESkc7OXoF9CXPh3IGoQ3Ot73H2wvOVRso_vSY6P7zLmH0w=w1303-h977-no" src="" alt="" />
-</div>
+    <!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
 
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("July 12, 2019 18:30:00").getTime();
-var moveInCountDownDate = new Date("September 30, 2019 15:35:00").getTime();
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="css/custom.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+  <!--nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"-->
+  <nav class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Tara Dadah</a>
+    <ul class="navbar-nav ml-md-auto">
+      <li class="nav-item">
+        <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/schultztara/" target="_blank" rel="noopener" aria-label="GitHub">
+          <span class="fa fa-linkedin"></span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="btn btn-social-icon btn-github" href="https://github.com/tdadah" target="_blank" rel="noopener" aria-label="GitHub">
+          <span class="fa fa-github"></span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/tarajd" target="_blank" rel="noopener" aria-label="Twitter">
+          <span class="fa fa-twitter"></span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
 
-  // Get today's date and time
-  var now = new Date().getTime();
-    
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-  var distance2 = moveInCountDownDate - now;
-    
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000)
-    
-  // Output the result in an element with id="countDown"
-  document.getElementById("countDown").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+<main role="main">
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
 
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("countDown").innerHTML = "&#128536;";
-  }
+  <div class="container marketing">
 
-   // Time calculations for days, hours, minutes and seconds
-  days = Math.floor(distance2 / (1000 * 60 * 60 * 24));
-  hours = Math.floor((distance2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  minutes = Math.floor((distance2 % (1000 * 60 * 60)) / (1000 * 60));
-  seconds = Math.floor((distance2 % (1000 * 60)) / 1000)
-    
-  // Output the result in an element with id="countDown"
-  document.getElementById("moveInCountDown").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-    
-  // If the count down is over, write some text 
-  if (distance2 < 0) {
-    clearInterval(x);
-    document.getElementById("moveInCountDown").innerHTML = "Welcome home!";
-  }
-}, 1000);
-</script>
+    <!-- Three columns of text below the navbar -->
+    <div class="row">
+      <div class="col-lg-4">
+        <i class="fas fa-terminal fa-7x"></i>
+        <h2>C#</h2>
+        <p>I have designed and lead development on programs written with C#, WPF, and .NET that is currently being used by enterprise customers.</p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <i class="fas fa-database fa-7x"></i>
+        <h2>SQL</h2>
+        <p>I have had over 5 years experience writing SQL queries and designing databases and tables.</p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <i class="fas fa-stream fa-7x"></i>
+        <h2>API</h2>
+        <p>I have assisted development on a RESTful API used by mobile applications to help integrate with Windows applications.</p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
 
-</body>
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Passions. <span class="text-muted">Seeing more underrepresented people in Software Engineering roles.</span></h2>
+        <p class="lead">I believe all teams can benefit from diversity and learning from other's experiences. I have participated or helped found
+        several different groups to help teach children, women, non-binary folks, and people of color web and software develpment.</p>
+      </div>
+      <div class="col-md-5">
+        <span style="font-size: 16rem;">
+          <i class="fas fa-laptop-code"></i>
+        </span>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Hobbies. <span class="text-muted">Home automation.</span></h2>
+        <p class="lead">Growing up I have watched the science fiction movies become reality.  I dream of having a fully automated home.  
+        I'm currently working on that using the open source project <a href="https://www.home-assistant.io/" target="_blank">Home-Assistant</a></p>
+      </div>
+      <div class="col-md-5 order-md-1">      
+        <span style="font-size: 16rem;">
+          <i class="fas fa-house-user"></i>
+        </span>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Murphy. <span class="text-muted">Golden retriever.</span></h2>
+        <p class="lead">This crazy puppy (almost three) is always willing to be helping assistant while I work.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="img/murphy.jpg" class="featurette-image img-fluid mx-auto" width="500" alt="Murphy the golden retriecer">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-right"><a href="#">Back to top</a></p>
+    <p>&copy; 2020 Tara Dadah</p>
+  </footer>
+</main>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="js/bootstrap.bundle.min.js"></script>
 </html>
